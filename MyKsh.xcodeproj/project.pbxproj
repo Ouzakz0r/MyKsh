@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF2C0A902D03FA4D001CAA27 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = FF2C0A8F2D03FA4D001CAA27 /* FirebaseCore */; };
+		FF2C0A902D03FA4D001CAA27 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = FF2C0A8F2D03FA4D001CAA27 /* FirebaseCore */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +64,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FF2C0A972D090E3E001CAA27 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				FF2C0A6B2D03BF95001CAA27 /* MyKsh */,
@@ -102,6 +103,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FF2C0A8E2D03FA4D001CAA27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FF2C0A912D03FC14001CAA27 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FF2C0A6A2D03BF95001CAA27 /* Products */;
@@ -132,6 +134,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF2C0A972D090E3E001CAA27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = FF2C0A962D090E3E001CAA27 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FF2C0A762D03BF96001CAA27 /* Debug */ = {
@@ -358,6 +367,14 @@
 				minimumVersion = 11.6.0;
 			};
 		};
+		FF2C0A912D03FC14001CAA27 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -365,6 +382,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FF2C0A8E2D03FA4D001CAA27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCore;
+		};
+		FF2C0A962D090E3E001CAA27 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF2C0A912D03FC14001CAA27 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
