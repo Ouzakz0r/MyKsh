@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NotLoggedHomeScreen: View {
     @State var user: String = ""
     @State var password: String = ""
 
@@ -18,6 +18,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
                 .padding()
+            Spacer()
             TextField("Digite seu usuário", text: $user)
             TextField("Digite sua senha", text: $password)
             Button("Logar") {
@@ -34,5 +35,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    NotLoggedHomeScreen()
 }
