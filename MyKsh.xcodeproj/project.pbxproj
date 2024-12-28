@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF2C0A902D03FA4D001CAA27 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = FF2C0A8F2D03FA4D001CAA27 /* FirebaseCore */; settings = {ATTRIBUTES = (Required, ); }; };
+		FF644A3F2D1C93CB00687F30 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FF644A3E2D1C93CB00687F30 /* FirebaseAuth */; };
 		FF68AADB2D091890004E905D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FF68AADA2D091890004E905D /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF2C0A902D03FA4D001CAA27 /* FirebaseCore in Frameworks */,
+				FF644A3F2D1C93CB00687F30 /* FirebaseAuth in Frameworks */,
 				FF68AADB2D091890004E905D /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +78,7 @@
 			packageProductDependencies = (
 				FF2C0A8F2D03FA4D001CAA27 /* FirebaseCore */,
 				FF68AADA2D091890004E905D /* FirebaseCrashlytics */,
+				FF644A3E2D1C93CB00687F30 /* FirebaseAuth */,
 			);
 			productName = MyKsh;
 			productReference = FF2C0A692D03BF95001CAA27 /* MyKsh.app */;
@@ -89,7 +92,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					FF2C0A682D03BF95001CAA27 = {
 						CreatedOnToolsVersion = 16.1;
@@ -207,6 +210,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -268,6 +272,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -295,6 +300,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyKsh/MyKsh.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"MyKsh/Preview Content\"";
 				DEVELOPMENT_TEAM = CXM7KWAZ6P;
@@ -336,6 +342,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyKsh/MyKsh.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MyKsh/Preview Content\"";
 				DEVELOPMENT_TEAM = CXM7KWAZ6P;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -420,6 +427,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FF2C0A912D03FC14001CAA27 /* XCRemoteSwiftPackageReference "SwiftLint" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		FF644A3E2D1C93CB00687F30 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF2C0A8E2D03FA4D001CAA27 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 		FF68AADA2D091890004E905D /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;

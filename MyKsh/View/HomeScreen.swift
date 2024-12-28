@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @Environment(\.dismiss) var dismiss
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Text("HOME SCREEN")
+            Spacer()
+            Button("Logout") {
+                dismiss()
+            }
+        }
+        .navigationBarBackButtonHidden()
     }
 }
 

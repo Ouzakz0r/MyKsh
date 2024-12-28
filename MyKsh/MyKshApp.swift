@@ -24,7 +24,7 @@ struct MyKshApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NotLoggedHomeScreen()
         }
     }
 }
